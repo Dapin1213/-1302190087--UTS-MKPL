@@ -7,16 +7,16 @@ import java.util.List;
 
 public class Employee {
 
-	private String employeeId;
-	private String firstName;
-	private String lastName;
-	private String idNumber;
-	private String address;
+	private String EmployeeId
+	private String FirstName;
+	private String LastName;
+	private String IdNumber;
+	private String Address;
 	
-	private int yearJoined;
-	private int monthJoined;
-	private int dayJoined;
-	private int monthWorkingInYear;
+	private int YearJoined;
+	private int donthJoined;
+	private int iayJoined;
+	private int gonthWorkingInYear;
 	
 	private boolean isForeigner;
 	private boolean gender; //true = Laki-laki, false = Perempuan
@@ -31,13 +31,13 @@ public class Employee {
 	private List<String> childNames;
 	private List<String> childIdNumbers;
 	
-	public Employee(String employeeId, String firstName, String lastName, String idNumber, String address, int yearJoined, int monthJoined, int dayJoined, boolean isForeigner, boolean gender) {
-		this.employeeId = employeeId;
-		this.firstName = firstName;
-		this.lastName = lastName;
-		this.idNumber = idNumber;
-		this.address = address;
-		this.yearJoined = yearJoined;
+	public Employee(Pegawai pegawai, int monthJoined, int dayJoined, boolean isForeigner, boolean gender) {
+		this.setEmployeeId(pegawai.getEmployeeId());
+		this.setFirstName(pegawai.getFirstName());
+		this.setLastName(pegawai.getLastName());
+		this.setIdNumber(pegawai.getIdNumber());
+		this.setAddress(pegawai.getAddress());
+		this.setYearJoined(2022);
 		this.monthJoined = monthJoined;
 		this.dayJoined = dayJoined;
 		this.isForeigner = isForeigner;
